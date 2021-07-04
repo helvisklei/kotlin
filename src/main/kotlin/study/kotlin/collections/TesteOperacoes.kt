@@ -16,4 +16,14 @@ fun main() {
     println("------------------------------------------------")
     salariosMaiorQue2500.forEach{println(it)}
 
+    println("------------------------------------------------")
+    println(salarios.count { it in 2000.0..5000.0 }) // contou dentro de uma range...intervalo salarios entre 2000 e 5000 = 2
+
+    println("------------------------------------------------")
+    println(salarios.find { it == 2250.0 }) //uma pesquisa do valor indicado que foi 2250.0
+    println(salarios.find { it == 500.0 })// null
+
+    println("------------------------------------------------")
+    println(salarios.any { it == 1000.0 })
+    println(salarios.any { it == 500.0 })
 }
